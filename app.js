@@ -8,7 +8,7 @@ let minmax=document.getElementById("minmax");
 let time=document.getElementById("time");
 start();
 function start(){
-    getweather("london")
+    getweather("britain")
 }
 btn.addEventListener("click",(e)=>{
     e.preventDefault();
