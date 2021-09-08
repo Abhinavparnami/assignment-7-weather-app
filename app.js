@@ -32,7 +32,7 @@ function getweather(input){
         temp.innerHTML=txt+"*C";
         txt=parseInt(data.main.temp_min-273);
         let txt2=parseInt(data.main.temp_max-273);
-        minmax.innerHTML=txt+"*C(min) / "+txt2+"*C(max)";
+        minmax.innerHTML=txt+"*C(min) / "+txt2+"°C(max)";
         txt=new Date(data.dt).toDateString();
         time.innerHTML=txt;
     })
