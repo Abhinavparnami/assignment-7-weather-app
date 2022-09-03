@@ -17,7 +17,7 @@ btn.addEventListener("click",(e)=>{
     text.value="";
 });
 function getweather(input){
-    fetch(`http://dataservice.accuweather.com/forecasts/v1/minute?q=${input}&appid=cc7b365cdf72c6b1736b020dc6c87432`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}`)
     .then((result)=>{
         return result.json()
     })
